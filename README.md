@@ -179,7 +179,7 @@ The application uses a comprehensive set of UI components built on Radix UI:
 ## 🔧 Configuration
 
 ### TypeScript
-The project uses TypeScript with strict mode disabled for build flexibility. Configuration can be found in `tsconfig.json`.
+The project uses TypeScript with strict mode enabled for type safety. Configuration can be found in `tsconfig.json`.
 
 ### Next.js
 Next.js is configured with:
