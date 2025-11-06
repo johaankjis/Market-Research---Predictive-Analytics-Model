@@ -71,7 +71,7 @@ A comprehensive web-based platform for market research analysis and predictive a
 
 Before you begin, ensure you have the following installed:
 - **Node.js**: Version 18.x or higher
-- **npm**: Version 10.x or higher (comes with Node.js)
+- **npm** or **pnpm**: Version 10.x or higher for npm (comes with Node.js), or latest pnpm
 
 ## 🚀 Installation
 
@@ -82,8 +82,15 @@ Before you begin, ensure you have the following installed:
    ```
 
 2. **Install dependencies**
+   
+   Using npm:
    ```bash
    npm install
+   ```
+   
+   Or using pnpm:
+   ```bash
+   pnpm install
    ```
 
 3. **Set up environment variables** (if required)
@@ -100,6 +107,8 @@ Start the development server with hot-reload:
 
 ```bash
 npm run dev
+# or
+pnpm dev
 ```
 
 The application will be available at [http://localhost:3000](http://localhost:3000)
@@ -110,6 +119,8 @@ Create an optimized production build:
 
 ```bash
 npm run build
+# or
+pnpm build
 ```
 
 ### Start Production Server
@@ -118,6 +129,8 @@ Run the production build:
 
 ```bash
 npm start
+# or
+pnpm start
 ```
 
 ### Linting
@@ -126,6 +139,8 @@ Run ESLint to check code quality:
 
 ```bash
 npm run lint
+# or
+pnpm lint
 ```
 
 ## 📁 Project Structure
@@ -243,13 +258,20 @@ Contributions are welcome! To contribute:
 
 **Build Errors**: If you encounter build errors, try:
 ```bash
+# For npm users:
 rm -rf node_modules package-lock.json
 npm install
+
+# For pnpm users:
+rm -rf node_modules pnpm-lock.yaml
+pnpm install
 ```
 
 **Port Already in Use**: Change the port:
 ```bash
 npm run dev -- -p 3001
+# or
+pnpm dev -p 3001
 ```
 
 **TypeScript Errors**: The project is configured to ignore TypeScript build errors, but you should still fix them in development.
