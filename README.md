@@ -1,75 +1,79 @@
 # Market Research & Predictive Analytics Model
 
-A modern, data-driven forecasting system for market analysis and demand prediction built with Next.js and TypeScript. This application provides comprehensive tools for market research, predictive analytics, data management, and automated report generation.
+A comprehensive web-based platform for market research analysis and predictive analytics, built with Next.js and modern web technologies. This application enables data-driven decision making through advanced forecasting models, data management, and automated reporting.
 
 ## 🚀 Features
 
 ### Dashboard Overview
-- **Real-time KPI Monitoring**: Track forecast accuracy, data points analyzed, report generation time, and active models
-- **Demand Forecasting Visualization**: Interactive charts comparing actual vs. forecast data
-- **Market Trends Analysis**: Comprehensive trend analysis with intuitive data visualizations
-- **Performance Metrics**: Monitor system performance and model accuracy in real-time
+- **Real-time KPI Monitoring**: Track key metrics like forecast accuracy (94.2%), data points analyzed, and model performance
+- **Visual Analytics**: Interactive charts displaying demand forecasts, trend analysis, and market segments
+- **Performance Metrics**: Monitor model accuracy, processing time, and active deployments
 
 ### Data Management
-- **Data Import/Export**: Support for multiple data sources including CSV, API, Database, and Cloud Storage
-- **Data Quality Metrics**: Track completeness, accuracy, consistency, and timeliness
-- **Historical Data Management**: Maintain and analyze historical market data
-- **Data Validation**: Automated data quality checks and validation
+- **Multi-source Integration**: Support for SQL databases, CSV imports, and API integrations
+- **Data Quality Monitoring**: Real-time data quality scoring and validation
+- **Source Management**: Track data freshness, record counts, and connection status
+- **Data Upload & Export**: Easy data import/export capabilities with validation
 
-### Forecasting Analytics
-- **Multiple Forecasting Models**:
+### Forecasting & Analytics
+- **Multiple ML Models**: 
   - Linear Regression
-  - Random Forest (Ensemble)
+  - Random Forest Ensemble
   - ARIMA Time Series
   - XGBoost
-  - Neural Network
-  - Prophet
-- **Model Performance Metrics**: Track accuracy, RMSE, and MAPE for each model
-- **Forecast Visualization**: Interactive charts showing predictions and confidence intervals
-- **Model Comparison**: Side-by-side comparison of different forecasting approaches
+- **Model Performance Metrics**: 
+  - Accuracy tracking
+  - RMSE (Root Mean Square Error)
+  - MAPE (Mean Absolute Percentage Error)
+- **Interactive Visualizations**:
+  - Forecast vs Actual comparisons
+  - Residual analysis
+  - Feature importance charts
+- **Model Training & Deployment**: Train, evaluate, and deploy models with a single click
 
 ### Reports & Insights
-- **Automated Report Generation**: Generate comprehensive market analysis reports
-- **Multiple Report Types**: Quarterly, Monthly, Weekly, and Ad-hoc reports
-- **Key Insights Dashboard**: Automated insight extraction and presentation
-- **Actionable Recommendations**: Data-driven recommendations for market strategies
+- **Automated Report Generation**: 
+  - Quarterly market analysis
+  - Monthly demand forecasting summaries
+  - Weekly competitive analysis
+  - Ad-hoc custom reports
+- **Actionable Insights**: AI-generated recommendations and strategic insights
 - **Export Capabilities**: Download reports in various formats
+- **Key Metrics Dashboard**: Revenue impact, market trends, and growth opportunities
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-- **Framework**: [Next.js 16](https://nextjs.org/) - React framework with App Router
-- **Language**: [TypeScript 5](https://www.typescriptlang.org/)
-- **UI Framework**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) with custom configuration
+- **Framework**: [Next.js 16.0.0](https://nextjs.org/) with React 19.2.0
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4.1.9 with custom animations
+- **UI Components**: 
+  - Radix UI primitives
+  - Custom component library with shadcn/ui
+  - Lucide React icons
 
-### UI Components
-- **Component Library**: [Radix UI](https://www.radix-ui.com/) - Accessible component primitives
-- **Icons**: [Lucide React](https://lucide.dev/) - Beautiful & consistent icon library
-- **Charts**: [Recharts](https://recharts.org/) - Composable charting library
-- **Form Management**: [React Hook Form](https://react-hook-form.com/) with Zod validation
-- **Notifications**: [Sonner](https://sonner.emilkowal.ski/) - Toast notifications
+### Data Visualization
+- **Charts**: Recharts for interactive data visualization
+- **Components**: Line charts, bar charts, scatter plots, and more
 
-### Styling & Design
-- **CSS Utilities**: `class-variance-authority`, `tailwind-merge`, `clsx`
-- **Animations**: `tailwindcss-animate`
-- **Theme Support**: `next-themes` for dark/light mode
+### Form Management
+- **React Hook Form**: Form state management
+- **Zod**: Schema validation
+- **@hookform/resolvers**: Form validation integration
 
-### Development Tools
-- **Package Manager**: pnpm
-- **Linting**: ESLint with Next.js configuration
-- **Build Tool**: Next.js built-in tooling
-- **Analytics**: Vercel Analytics
+### Additional Libraries
+- **date-fns**: Date manipulation and formatting
+- **next-themes**: Dark/light theme support
+- **Vercel Analytics**: Performance monitoring
+- **Sonner**: Toast notifications
 
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (version 18 or higher)
-- [pnpm](https://pnpm.io/) (recommended) or npm
+- **Node.js**: Version 18.x or higher
+- **npm** or **pnpm**: Version 10.x or higher for npm (comes with Node.js), or latest pnpm
 
-## 🚀 Getting Started
-
-### Installation
+## 🚀 Installation
 
 1. **Clone the repository**
    ```bash
@@ -78,137 +82,230 @@ Before you begin, ensure you have the following installed:
    ```
 
 2. **Install dependencies**
+   
+   Using npm:
    ```bash
-   pnpm install
-   # or
    npm install
    ```
+   
+   Or using pnpm:
+   ```bash
+   pnpm install
+   ```
 
-### Development
+3. **Set up environment variables** (if required)
+   ```bash
+   # Create a .env.local file if needed
+   # Add any necessary environment variables
+   ```
 
-Run the development server:
+## 💻 Usage
+
+### Development Mode
+
+Start the development server with hot-reload:
 
 ```bash
-pnpm dev
-# or
 npm run dev
+# or
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
-### Building for Production
+### Production Build
 
-Build the application for production:
+Create an optimized production build:
 
 ```bash
-pnpm build
-# or
 npm run build
+# or
+pnpm build
 ```
 
-### Running Production Build
+### Start Production Server
 
-Start the production server:
+Run the production build:
 
 ```bash
-pnpm start
-# or
 npm start
+# or
+pnpm start
 ```
 
 ### Linting
 
-Run the linter to check code quality:
+Run ESLint to check code quality:
 
 ```bash
-pnpm lint
-# or
 npm run lint
+# or
+pnpm lint
 ```
 
 ## 📁 Project Structure
 
 ```
 Market-Research---Predictive-Analytics-Model/
-├── app/                          # Next.js app directory (App Router)
-│   ├── data/                     # Data management page
-│   ├── forecasting/              # Forecasting analytics page
-│   ├── reports/                  # Reports & insights page
+├── app/                          # Next.js app directory
+│   ├── data/                     # Data management pages
+│   ├── forecasting/              # Forecasting analytics pages
+│   ├── reports/                  # Reports and insights pages
 │   ├── globals.css               # Global styles
-│   ├── layout.tsx                # Root layout component
-│   └── page.tsx                  # Home page (Dashboard)
+│   ├── layout.tsx                # Root layout
+│   └── page.tsx                  # Home page
 ├── components/                   # React components
-│   ├── ui/                       # Reusable UI components (Radix UI based)
-│   ├── dashboard-overview.tsx   # Dashboard component
-│   ├── data-management.tsx      # Data management component
+│   ├── ui/                       # Reusable UI components
+│   ├── dashboard-overview.tsx    # Dashboard component
+│   ├── data-management.tsx       # Data management component
 │   ├── forecasting-analytics.tsx # Forecasting component
-│   ├── navigation.tsx           # Navigation bar component
-│   ├── reports-insights.tsx     # Reports component
-│   └── theme-provider.tsx       # Theme provider component
+│   ├── navigation.tsx            # Navigation component
+│   ├── reports-insights.tsx      # Reports component
+│   └── theme-provider.tsx        # Theme context provider
+├── hooks/                        # Custom React hooks
 ├── lib/                          # Utility functions
-│   └── utils.ts                 # Helper utilities
+│   └── utils.ts                  # Helper utilities
 ├── public/                       # Static assets
-│   └── *.svg, *.png             # Images and icons
 ├── styles/                       # Additional styles
-├── components.json               # Shadcn UI configuration
-├── next.config.mjs              # Next.js configuration
-├── package.json                 # Project dependencies
-├── postcss.config.mjs           # PostCSS configuration
-├── tailwind.config.js           # Tailwind CSS configuration
-└── tsconfig.json                # TypeScript configuration
+├── components.json               # Component configuration
+├── next.config.mjs               # Next.js configuration
+├── package.json                  # Dependencies and scripts
+├── postcss.config.mjs            # PostCSS configuration
+├── tailwind.config.js            # Tailwind CSS configuration
+└── tsconfig.json                 # TypeScript configuration
 ```
-
-## 🎯 Key Pages
-
-1. **Dashboard (/)**: Overview of key metrics and performance indicators
-2. **Data Management (/data)**: Import, manage, and validate data sources
-3. **Forecasting (/forecasting)**: Run and compare predictive models
-4. **Reports (/reports)**: Generate and access market analysis reports
-
-## 🎨 UI Components
-
-The application uses a comprehensive set of UI components built on Radix UI:
-
-- **Layout**: Card, Sheet, Tabs, Resizable panels
-- **Forms**: Input, Select, Checkbox, Radio, Slider
-- **Data Display**: Table, Badge, Progress, Charts
-- **Feedback**: Toast, Alert Dialog, Tooltips
-- **Navigation**: Dropdown Menu, Context Menu, Menubar
-- **And many more...**
 
 ## 🔧 Configuration
 
-### TypeScript
-The project uses TypeScript with strict mode enabled for type safety. Configuration can be found in `tsconfig.json`.
+### Next.js Configuration
 
-### Next.js
-Next.js is configured with:
-- Image optimization disabled (for static export compatibility)
-- TypeScript build errors ignored (for flexible development)
+The project uses custom Next.js configuration (`next.config.mjs`):
+- TypeScript build errors are ignored for flexibility
+- Image optimization is disabled for better compatibility
 
-## 📊 Analytics Integration
+### TypeScript Configuration
 
-The application includes Vercel Analytics for monitoring user interactions and performance metrics.
+TypeScript is configured with strict mode and modern ES features:
+- Target: ES6
+- Module resolution: bundler
+- Path aliases: `@/*` maps to project root
+
+## 🎨 Customization
+
+### Theme
+
+The application supports light and dark themes using `next-themes`. Theme toggle is available in the navigation bar.
+
+### Components
+
+UI components are built with Radix UI and can be customized in the `components/ui/` directory.
+
+### Styling
+
+Tailwind CSS classes can be customized in the Tailwind configuration file.
+
+## 📊 Key Features Explained
+
+### 1. Dashboard Overview
+The main dashboard provides a comprehensive view of:
+- Current forecast accuracy vs baseline models
+- Total data points analyzed
+- Report generation efficiency
+- Active production models
+
+### 2. Data Management
+Manage multiple data sources:
+- Connect to SQL databases
+- Import CSV files
+- Integrate with external APIs
+- Monitor data quality in real-time
+
+### 3. Forecasting Models
+Deploy and compare multiple ML models:
+- Choose the best model based on accuracy metrics
+- Visualize forecast vs actual performance
+- Analyze residuals and feature importance
+- Train models on new data
+
+### 4. Automated Reports
+Generate professional reports:
+- Schedule automatic report generation
+- Export in multiple formats
+- Include AI-generated insights
+- Track key business metrics
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! To contribute:
 
-## 📝 License
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This project is open source and available under the [MIT License](LICENSE).
+## 📝 Development Guidelines
 
-## 🔗 Links
+- Follow TypeScript best practices
+- Use ESLint for code quality
+- Write meaningful commit messages
+- Test your changes before submitting
+- Update documentation as needed
 
-- **Repository**: [GitHub](https://github.com/johaankjis/Market-Research---Predictive-Analytics-Model)
-- **Documentation**: See inline code documentation for component details
-- **Next.js Documentation**: [nextjs.org/docs](https://nextjs.org/docs)
-- **Radix UI Documentation**: [radix-ui.com/docs](https://www.radix-ui.com/docs)
+## 🐛 Troubleshooting
 
-## 👥 Support
+### Common Issues
 
-For support, please open an issue in the GitHub repository or contact the development team.
+**Build Errors**: If you encounter build errors, try:
+```bash
+# For npm users:
+rm -rf node_modules package-lock.json
+npm install
+
+# For pnpm users:
+rm -rf node_modules pnpm-lock.yaml
+pnpm install
+```
+
+**Port Already in Use**: Change the port:
+```bash
+npm run dev -- -p 3001
+# or
+pnpm dev -p 3001
+```
+
+**TypeScript Errors**: The project is configured to ignore TypeScript build errors, but you should still fix them in development.
+
+## 📈 Performance
+
+The application is optimized for performance:
+- Server-side rendering with Next.js
+- Code splitting and lazy loading
+- Optimized bundle size
+- Vercel Analytics integration
+
+## 🔒 Security
+
+- No sensitive data is hardcoded
+- Environment variables for configuration
+- Regular dependency updates recommended
+- Input validation with Zod schemas
+
+## 📄 License
+
+This project is available for use under the terms specified by the repository owner.
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components from [Radix UI](https://www.radix-ui.com/)
+- Icons from [Lucide React](https://lucide.dev/)
+- Charts powered by [Recharts](https://recharts.org/)
+
+## 📧 Contact
+
+For questions or support, please open an issue in the GitHub repository.
 
 ---
 
-Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
+**Note**: This is a demo application showcasing predictive analytics capabilities. For production use, ensure proper data security, model validation, and testing.
